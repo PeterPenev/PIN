@@ -1,0 +1,16 @@
+﻿@model PinViewModel
+
+@{
+    ViewData["Title"] = "PIN Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Here you could check if entered PIN is valid.</p>
+
+</div>
+
+@await Html.PartialAsync("_PinSubmitForm")
+
+
+

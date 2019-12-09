@@ -1,0 +1,11 @@
+﻿<h6>Please enter your PIN</h6>
+
+<form action="/pins/CheckIfPinIsValid" method="post">
+    @Html.AntiForgeryToken()
+    <label id="Name"></label>
+    <input type="text" id="Name" name="Name" /><br />
+
+    <input type="submit" name="name" value="Check PIN" />
+</form>
+
+

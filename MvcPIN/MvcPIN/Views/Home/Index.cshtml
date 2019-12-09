@@ -1,0 +1,21 @@
+﻿@model PinsViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Find out if the given PIN is valid according to <a href="https://bg.wikipedia.org/wiki/%D0%95%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD_%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D1%81%D0%BA%D0%B8_%D0%BD%D0%BE%D0%BC%D0%B5%D1%80" target="_blank">the Bulgarian legislation</a>.</p>
+
+</div>
+
+<ul>
+    @if (Model.Pins.Count() != 0)
+    {
+        @foreach (var pin in Model.Pins)
+        {
+            <li>@pin.Name</li>
+        }
+    }
+</ul>
